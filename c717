@@ -4,4 +4,3 @@ try:
         print(a,a)
 except EOFError:
     pass
-easn@easn
