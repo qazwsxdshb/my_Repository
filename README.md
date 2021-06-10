@@ -1,1 +1,1 @@
-zero judge python3
+zerojudge  python3
