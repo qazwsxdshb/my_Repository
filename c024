@@ -1,0 +1,11 @@
+try:
+    while 1:
+        a=int(input())
+        if a<=-1:
+            break
+        ans=1
+        for i in range(a):
+            ans=ans+i+1
+        print(ans)
+except:
+    EOFError
