@@ -29,7 +29,7 @@
 	
 	$ar = unpack('C*', $postdata);
 	
-//	for($j=0;$j<60;$j++)
+
 	for($j=0;$j<60;$j++)
 	{
 		$T=$TT2-60+$j;
