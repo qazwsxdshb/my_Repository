@@ -1,0 +1,83 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>用電量</title>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script	 src="http://code.highcharts.com/highcharts.js"></script>
+</head>
+
+
+
+<body>
+<div id="container" style="width: 550px; height: 400px; margin: 0 auto"></div>
+
+
+<script>
+
+$(document).ready(function() {  
+   var chart = {
+      type: 'column'
+   };
+   var title = {
+      text: '當日用電量'   
+   };
+   var subtitle = {
+      text: ''  
+   };
+   var xAxis = {
+      categories: [$qwer$],
+      crosshair: true
+   };
+   var yAxis = {
+      min: 0,
+      title: {
+         text: 'w'         
+      }      
+   };
+   var tooltip = {
+      headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+      pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+         '<td style="padding:0"><b>{point.y:.1f} W</b></td></tr>',
+      footerFormat: '</table>',
+      shared: true,
+      useHTML: true
+   };
+   var plotOptions = {
+      column: {
+         pointPadding: 0.2,
+         borderWidth: 0
+      }
+   };  
+   var credits = {
+      enabled: false
+   };
+   var series= [{
+        name: 'total',
+            data: [$total$]
+        }, {
+            name: 'A',
+            data: [$A$]
+        }, {
+            name: 'B',
+            data: [$B$]
+        }, {
+            name: 'C',
+            data: [$C$]
+   }]; 
+      
+   var json = {};   
+   json.chart = chart; 
+   json.title = title;   
+   json.subtitle = subtitle; 
+   json.tooltip = tooltip;
+   json.xAxis = xAxis;
+   json.yAxis = yAxis;  
+   json.series = series;
+   json.plotOptions = plotOptions;  
+   json.credits = credits;
+   $('#container').highcharts(json);
+  
+});
+</script>
+</body>
+</html>
