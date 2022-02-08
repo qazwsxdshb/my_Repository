@@ -1,0 +1,36 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>create FLAG</title>
+</head>
+<body>
+	<center>
+		<tr>
+			<a href=scoreboard.php>scoreboard</a>
+			<a href=create.html>create Flag</a>
+			<a href=challenge.php>challenge</a>
+			<a href=logout.php>logout</a>
+		</tr>
+	</center><br><br>
+	<center>
+		<form action="create.php" enctype="multipart/form-data" method="post">
+			名稱:<input type="text" id="name" name="name" required><br><br>
+			FLAG:<input type="text" id="FLAG" name="FLAG" required><br><br>
+			內容:<textarea type="text" id="content" name="content" required style="width:300px;height:20px;"></textarea><br><br>
+			提示:<textarea type="text" id="hint" name="hint" required style="width:300px;height:20px;"></textarea><br><br>
+			<h2>score</h2>
+			50<input type="radio" name="score" id="score" value="50" required><br>
+			100<input type="radio" name="score" id="score" value="100"><br>
+			200<input type="radio" name="score" id="score" value="200"><br><br>
+			<p>可以不傳</p>
+			<input type="file" name="my_file"><br><br><br>
+			<input type="submit">
+		</form>
+	</center>
+
+
+	
+
+
+</body>
+</html>

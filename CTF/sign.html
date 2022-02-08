@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>sign up</title>
+<meta charset="utf-8">
+<style type="text/css">
+		
+		.no_01 {
+		    width:400px;
+			height:400px;
+			top:50px;
+			right:-430px;
+			position: relative;
+			background-color:#508;
+			border:6px solid #fff;
+			border-radius:20px;
+			opacity:.9;
+		}
+		
+		body {
+			background:url(main.gif);
+		}
+		input {
+			background-color:transparent;
+			border:1px #808080 solid;
+			border-radius:15px;
+			font-size:20px;
+			color:#fff;
+		}
+		
+		.userpass {
+			font-size:23px;
+			color:#D3D3D3;
+		}
+		
+		button {
+			border-radius:10px;
+			font-size:20px;
+			
+			position:Relative;
+			top:-10px;
+			right:-129px;
+		}
+		
+		.sign {
+			color:#D3D3D3;
+			fort-size:10px;
+		}
+		
+		h1{
+			color:#D3D3D3;
+			font-size:40px;
+		}
+		
+		a{
+			color:#14b8b8;
+		}
+		
+	</style>
+</head>
+<body><br>
+	<div class="no_01"><br>
+	<center><h1>註冊</h1><br>
+		<form action="sign.php" method="POST">
+			<span class="userpass">username:</span><input type="text" name='username' required=""><br><br>
+			<span class="userpass">password:</span><input type="password" name='password' required=""><br><br>
+			<span class="userpass">comfirm:</span><input type="password" name='password2' required=""><br><br>
+			<button>submit</button>
+		</form><br>
+		<span class="sign">已有帳號?  </span><a href='index.php'>登入</a>
+	</center>
+	</div>
+</body>
+</html>
