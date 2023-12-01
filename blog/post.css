@@ -1,0 +1,110 @@
+@font-face {
+    font-family: titlefont;
+    src: url(font/title.ttf);
+}
+@font-face {
+    src: url(font/text.ttf);
+    font-family: text;
+}
+
+/*author*/
+.people{
+    position: relative;
+    top:15%;
+    left:3%;
+    height: 82%;
+    width: 30%;
+    position: fixed;
+    padding: 1%;
+    background-color: #E8ECEB;
+}
+.author{
+    font-size: 40px;
+    position: absolute;
+    left: 40%;
+}
+.avatar{
+    position: absolute;
+    height:80%;
+    width: 90%;
+    top:10%;
+    right: 5%;
+    background-image: url(pretty.jpg);
+    background-size: 100%;
+    background-position: 0px -150px;
+    background-repeat: no-repeat;
+}
+.connect{
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    left:40%;
+    bottom:5%;
+    width: 80px;
+    color: white;
+    background-color:#2D3e4e;
+    border-radius: 20px;
+    transition: color 1s ease;
+    transition: background-color 1s ease;
+}
+.connect:hover{
+    color: black;
+    background-color: #E8ECEB;
+}
+
+/*comment*/
+.comment{
+    display: flex;
+    height: 86%;
+    width: 64%;
+    position: relative;
+    top: 14.3%;
+    left: 36%;
+
+}
+
+.comment-title{
+    position: absolute;
+    width: 90%;
+    height: 9%;
+    right:5%;
+    line-break: anywhere;
+    overflow: hidden;
+    text-align: center;
+    font-size: 40px;
+    background-color: #E8ECEB;
+    border-radius: 100px;
+}
+.comment-time{
+    position: absolute;
+    right:6%;
+    top:12%;
+    font-size: 20px;
+}
+
+.comment_tt{
+    position: absolute;
+    display: flex;
+    left: 5%;
+    top:12%;
+}
+
+.comment-type{
+    font-size: 20px;
+    margin-right: 10px;
+    padding-top: 1px;
+    background-color: #E8ECEB;
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.comment-content{
+    font-size: 20px;
+    line-break:auto;
+    position:absolute;
+    top:17%;
+    right: 5%;
+    width: 90%;
+}

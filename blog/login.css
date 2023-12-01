@@ -1,0 +1,47 @@
+/*font import*/
+@font-face {
+    src: url(font/title.ttf);
+    font-family: titlefont;
+}
+
+.save{
+    font-family: titlefont;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    display: block;
+    left: 42%;
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    transition-duration: 0.5s;
+}
+.save:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+}
+.error{
+    font-size: 30px;
+}
+.table{
+    position: relative;
+    display: block;
+    height: 100px;
+    width: 300px;
+    top:200px;
+    margin: auto;
+}
+
+.input{
+    font-size: 20px;
+    display: block;
+    height: 70px;
+    width: 300px;
+}
+input{
+    font-size: 17px;
+    border-radius: 20px;
+    height: 30px;
+    padding: 5px;
+}

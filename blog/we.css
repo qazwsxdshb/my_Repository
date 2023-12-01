@@ -1,0 +1,23 @@
+/*author*/
+.author{
+    margin: auto;
+
+    position: relative;
+    top: 100px;
+    
+    display: flex;
+    width: 80%;
+    height: 600px;
+    background-color: #E8ECEB;
+}
+
+
+
+
+.avatar{
+    position: absolute;
+    display: flex;
+    width: 200px;
+    height: 500px;
+}
+

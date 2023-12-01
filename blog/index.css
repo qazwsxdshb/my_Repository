@@ -1,0 +1,139 @@
+/*font import*/
+@font-face {
+    src: url(font/text.ttf);
+    font-family: text;
+}
+
+/* search */
+.search{
+    height:30px;
+    font-size: 20px;
+    position: absolute;
+    top: 100px;
+    right:2%;
+    border-radius: 20px;
+}
+
+/*comment*/
+.table{
+    width: 73%;
+    position: relative;
+    top:150px;
+    margin-left: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.comment{
+    background-color:  #E8ECEB;
+    margin:7px;
+    padding: 1%;
+    width: 330px;
+    height: 250px;
+    display: flex;
+    position: relative;
+    flex-flow: wrap;
+    overflow: visible;
+}
+
+
+.easn-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-image: url(pretty.jpg);
+    background-size: 141px 200px;
+    background-position: -35px -55px;
+}
+
+.How-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-image: url(How.png);
+    background-size: 100px 100px;
+    background-position: -20px -15px;
+}
+
+.author{
+    width: 235px;
+    color: black;
+
+    font-family: text;
+    font-size: 27px;
+    position: absolute;
+    left: 70px;
+}
+
+.project{
+    font-size: 20px;
+    color: black;
+
+    transition: color 0.3s ease-out;
+    position: absolute;
+    width: 90%;
+    right:5%;
+    height: 180px;
+    top: 67px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    
+}
+
+.project:hover{
+    color: violet;
+}
+
+
+.date{
+    position: absolute;
+    bottom: 1.5%;
+    right: 5%;
+}
+
+.tt{
+    margin-right: 10px;
+    display: block;
+    height: 20px;
+    width: 50px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: azure;
+}
+
+.comment_tt{
+    position: absolute;
+    display: flex;
+    bottom: 1.5%;
+}
+
+/* rank */
+.god {
+    position: fixed;
+    display: block;
+    width: 300px;
+    height: 400px;
+    margin-top: 7px;
+    top: 150px;
+    background-color: #E8ECEB;
+}
+
+.rank_title{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+.rank{
+    font-size: 20px;
+    position: relative;
+    height: 30px;
+    width: 100%;
+    padding-top: 7px;
+    text-align: center;
+}
+
+.rank_a{
+    color: black;
+}
